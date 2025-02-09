@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="login-container">
-        <h2>Monsters</h2>
+        <h2>Sign up</h2>
         <form>
             <div class="form-group">
                 <label for="username">Username</label>
@@ -22,7 +22,7 @@
             </div>
         </form>
         <div class="create-account">
-            <button onclick="window.location.href='registro.html'">Create an account</button>
+            <button [routerLink]="['/registration']" routerLinkActive="active">Create an account</button>
         </div>
     </div>
 </body>

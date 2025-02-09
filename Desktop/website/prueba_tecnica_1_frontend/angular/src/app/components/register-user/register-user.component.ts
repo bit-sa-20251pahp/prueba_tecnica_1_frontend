@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { UserServiceService } from '../../services/user.service.service';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-register-user',
-  imports: [FormsModule],
+  imports: [FormsModule, RouterLink],
   templateUrl: './register-user.component.html',
   styleUrl: './register-user.component.css'
 })

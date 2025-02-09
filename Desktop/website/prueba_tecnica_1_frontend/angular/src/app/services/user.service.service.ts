@@ -19,13 +19,13 @@ export class UserServiceService {
   userLogin(user: any) : Observable<any>{
     return this.http.post<any>(`${this.apiUrl}/login-user`,user);
   }
-  findUser(user:any) : Observable<any> {
-    return this.http.get(`${this.apiUrl}/find-user`, user)
+  findUser(user:string) : Observable<any> {
+    return this.http.get(`${this.apiUrl}/find-user/${user}`)
   }
   editUser(user:any) : Observable<any> {
     return this.http.put(`${this.apiUrl}/update-user`, user)
   }
-  deleteUser(user:any) : Observable<any> {
-    return this.http.delete(`${this.apiUrl}/delete-user`, user)
+  deleteUser(user:string) : Observable<any> {
+    return this.http.delete(`${this.apiUrl}/delete-user/${user}`)
   }
 }

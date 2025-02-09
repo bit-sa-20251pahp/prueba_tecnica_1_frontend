@@ -1,3 +1,4 @@
+<app-root></app-root>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -9,13 +10,13 @@
     <div class="container">
         <h2>Delete User</h2>
         <form id="editarForm">
-            <label for="nombre">Username:</label>
+            <label for="nombre">Username</label>
             <input [(ngModel)]="username" type="text" id="nombre" name="nombre" required>
 
 
-            <label for="contraseña">Password:</label>
+            <label for="contraseña">Password</label>
             <input [(ngModel)]="password" type="password" id="contraseña" name="contraseña">
-            <button  (click)="deleteUser()" type="submit">Eliminar</button>
+            <button  (click)="deleteUser()" type="submit">Delete</button>
         </form>
     </div>
 </body>

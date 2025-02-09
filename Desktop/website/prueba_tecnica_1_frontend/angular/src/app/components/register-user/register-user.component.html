@@ -9,13 +9,15 @@
     <div class="container">
         <h2>Create an account</h2>
         <form id="registroForm">
-            <label for="nombre">Username:</label>
+            <label for="nombre">Username</label>
             <input type="text" [(ngModel)]="username" id="nombre" name="nombre" required>
 
-            <label for="contraseña">Password:</label>
+            <label for="contraseña">Password</label>
             <input type="password" [(ngModel)]="password" id="contraseña" name="contraseña" required>
 
             <button (click)="register()" type="submit">Register</button>
+            <br>
+            <button [routerLink]="['/log-in']" routerLinkActive="active">Log In</button>
         </form>
     </div>
 </body>
